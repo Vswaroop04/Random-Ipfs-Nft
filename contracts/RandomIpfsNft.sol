@@ -26,7 +26,7 @@ contract RandomIpfsNft is ERC721URIStorage, VRFConsumerBaseV2, Ownable {
     bytes32 private immutable i_gasLane;
     uint32 private immutable i_callbackGasLimit;
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
-    uint32 private constant NUM_WORDS = 1;
+    uint16 private constant NUM_WORDS = 1;
 
     // NFT Variables
     uint256 private immutable i_mintFee;
